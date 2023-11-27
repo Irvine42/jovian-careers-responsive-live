@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <!--this goes on the tab at the top -->
+    <title>My First Web Page</title>
+
+    <!-- some links to fonts from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Linefont:wght@100;200&family=Roboto:wght@100;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- a link to the css styles sheet -->
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+
+
+
+<body>
+    <!-- THE NAVBAR -->
+    <div id="navbar">
+        <img id="logo" src="https://i.imgur.com/m1wXjqw.png" alt="Jovian logo">
+    </div>
+
+    <!-- THE BANNER -->
+    <img id="banner" src="banner.jpg" alt="A banner at the top of the page" height="240">
+
+    <!-- HEADER -->
+    <h1>Welcome to Jovian</h1>
+
+    <!-- SIDE BY SIDE DESCRIPTION AND IMAGE -->
+    <div id="about">
+        <div id="description">
+            <!-- DESCRIPTION -->
+            <p style="margin-top: 0;">
+                At Jovian, we do all sorts of crazy stuff! From Frontend development,
+                to totally useless things like <span>lion taming!</span> Here are some more
+                lines to fill out the spot where the original lines should have gone - and
+                a few more for good measure.
+            </p>
+            <!-- BOOTCAMPS WITH LINKS  -->
+            <p>
+                We also offer 2 industry-focused bootcamps
+            <ol>
+                <li>
+                    <a href="https://jovian.com/program/jovian-full-stack-developer-bootcamp">
+                        Jovian Full Stack Developer Bootcamp
+                    </a>
+
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=-8I5TtNfjBI">
+                        Complete Nonsense Bootcamp
+                    </a>
+                </li>
+            </ol>
+            </p>
+        </div>
+        <!-- IMAGE -->
+        <div id="team">
+            <img id="team-image" src="team.jpg" alt="Team">
+        </div>
+    </div>
+
+
+    <!-- JOB TABLE SECTION -->
+    <h2>Job Opportunities</h2>
+    <div id="jobs">
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted On</th>
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Frontend Developer</td>
+                <td>Bengalaru</td>
+                <td>India</td>
+                <td>$12,00,000</td>
+                <td>Mar 3, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Full Stack Developer</td>
+                <td>New Delhi</td>
+                <td>India</td>
+                <td>$15,00,000</td>
+                <td>Feb 1, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Data Scientist</td>
+                <td>San Fransisco</td>
+                <td>USA</td>
+                <td>$175,000</td>
+                <td>Dec 22, 2022</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Machine Learning Engineer</td>
+                <td colspan="2">Remote</td>
+                <td>$80,000</td>
+                <td>Sep 19, 2022</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <!-- OLD JOBS SECTION, NOW IN A TABLE -->
+    <!-- <div id="jobs">
+        <div>
+            <a href="mailto:support@jovian.com?subject=Frontend" class="apply" target="_blank">Apply</a> 
+            <h3 class="job-role">Frontend Developer</h3>
+            <div class="location">Bengaluru, India</div>
+        </div>
+        <div>
+            <a href="mailto:support@jovian.com?subject=Radishes" class="apply" target="_blank">Apply</a>
+            <h3 class="job-role">Executive Officer in charge of radishes</h3>
+            <div class="location">Starship Enterprise</div>
+        </div>
+        <div>
+            <a href="mailto:support@jovian.com?subject=Lion Tamer" class="apply" target="_blank">Apply</a>
+            <h3 class="job-role">Lion Tamer</h3>
+            <div class="location">Great Britain</div>
+        </div>  -->
+
+
+
+    <!-- APPLICATION FORM -->
+    <div id="application">
+        <h2>Submit Your Application</h2>
+        <form id="application-form" action="https://formbold.com/s/3pAae" method="post" enctype="multipart/form-data">
+            <!-- Text input for name -->
+            <div class="form-group">
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" name="Full Name" required placeholder="John Doe">
+            </div>
+            <!-- Email input (checks for valid email) -->
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="Email Address" required placeholder="jdoe@example.com">
+            </div>
+            <!-- Number input for phone number (checks for a number) -->
+            <div class="form-group">
+                <label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="Phone Number" required placeholder="(250)372-3979">
+            </div>
+            <!-- Date input widget for date of birth -->
+            <div class="form-group">
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" id="dob" name="Date of Birth" required>
+            </div>
+            <!-- Dropdown selector input for position applied for  -->
+            <div class="form-group">
+                <label for="position">Position Applied for</label><br>
+                <select name="Positon Applied" id="position" required>
+                    <option value="">Select Position</option>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="fullstack">Full Stack Developer</option>
+                    <option value="data scientist">Data Scientist</option>
+                    <option value="ml engineer">ML Engineer</option>
+                </select>
+            </div>
+            <!-- Input that accepts specific file types -->
+            <div class="form-group">
+                <label for="resume">Upload Resume</label><br>
+                <input type="file" id="resume" name="Resume" accept=".pdf, .doc, .docx, .txt" required>
+            </div>
+            <div class="form-group">
+                <label for="coverletter">Cover Letter</label><br>
+                <textarea name="Cover Letter" id="coverletter" rows="5"
+                    placeholder="Explain why your so great"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="Terms" required>
+                    I agree to the terms and conditions
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Application">
+            </div>
+        </form>
+    </div>
+
+
+
+    <!-- DEPRACATED APPLICATION FORM -->
+    <!-- <div id="application">
+        <h2>Submit Your Application</h2>
+        <form action="process-form.php" method="post">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div> -->
+
+
+    <!-- FOOTER -->
+    <div id="footer">
+        <ul id="footer-links">
+            <li>
+                <a href="https://jovian.com/learn" target="_blank">
+                    Courses
+                </a>
+            </li>
+            <li>
+                <a href="https://jovian.com/learn" target="_blank">
+                    Programs
+                </a>
+            </li>
+            <li>
+                <a href="https://youtube.com/@jovianhq" target="_blank">
+                    Youtube
+                </a>
+            </li>
+        </ul>
+        <!-- COPYWRITE -->
+        <span class="copywrite">© 2023 Jovian</span>
+    </div>
+    </div>
+
+</body>
+
+</html>
